@@ -17,9 +17,13 @@ public class LivingThing {
         this.name = name;
     }
 
+    public int getHitPoint(){
+        return hitPoint;
+    }
+
     public void LivingThing(String name, int maximumHP, int attack){
         this.name = name;
-        this.hitPoint = maximumHP;
+        hitPoint = maximumHP;
         this.attack = attack;
         this.dead = false;
         System.out.printf("%sのHPは%d。攻撃力は%dです。", name, maximumHP, attack);
@@ -39,5 +43,6 @@ public class LivingThing {
             dead = true;
             System.out.printf("%sは倒れた。\n", name);
         }
+
     }
 }

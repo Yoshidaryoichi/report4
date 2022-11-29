@@ -43,6 +43,8 @@ public class Enemy extends LivingThing {
             dead = true;
             System.out.printf("モンスター%sは倒れた。\n", name);
         }
+    
+
     }
 
 }

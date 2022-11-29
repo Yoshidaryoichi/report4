@@ -28,7 +28,9 @@ public class Hero extends LivingThing {
      */
     public void attack(Enemy e){
         
-       super.attack(e);
+        int damage = (int)(Math.random() * attack);
+        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, getName(), damage);
+        e.wounded(damage);
     }
 
     /**
