@@ -9,11 +9,11 @@ public class WarriorTest {
     Enemy enemy = new Enemy("スライム", dhitPoint, 3);
     for(int i=0;i<4;i++){
         warrior.attackWithWeponSkill(enemy);
-
+        
+    assertEquals( attack * 1.5*3, dhitPoint - enemy.getHitPoint());
     }
-    assertEquals( attack * 1.5, 9);
-    
 }
 }
+
 
 

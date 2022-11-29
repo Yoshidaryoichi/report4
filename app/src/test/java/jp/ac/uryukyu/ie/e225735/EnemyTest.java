@@ -12,7 +12,7 @@ class EnemyTest {
      *  (3) 敵が死んだ状態ならば攻撃できないはず。
      * 　　つまり攻撃実行してもヒーローのHPは減っていないことを期待。これを検証する。
      */
-    @Test
+    
     void attackTest() {
         int defaultHeroHp = 100;
         Hero demoHero = new Hero("デモ勇者", defaultHeroHp, 100);
