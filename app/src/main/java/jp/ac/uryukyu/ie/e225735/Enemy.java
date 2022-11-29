@@ -9,7 +9,6 @@ package jp.ac.uryukyu.ie.e225735;
  * Created by tnal on 2016/11/13.
  */
 public class Enemy extends LivingThing {
-    
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -20,7 +19,9 @@ public class Enemy extends LivingThing {
     public Enemy (String name, int maximumHP, int attack) {
         super.LivingThing(name,maximumHP,attack);
     }
-
+    public int getHitPoint(){
+        return super.getHitPoint();
+    }
     /**
      * Heroへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
